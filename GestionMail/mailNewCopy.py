@@ -5,7 +5,7 @@ from siteOpen import driver1
 
 # Fonction pour copier l'e-mail temporaire
 def copy_mail():
-    time.sleep(7)
+    time.sleep(3)
     button_copy = 'button[data-original-title="Copier l\'email"]'
     target_copy = driver1.find_element(By.CSS_SELECTOR, button_copy)
     try:
