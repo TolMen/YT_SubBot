@@ -8,7 +8,7 @@ from VariousInfo import directoryFirstName
 
 # Fonction pour écrire le prénom dans l'étape 1 du formulaire
 def editFormName():
-    time.sleep(5)
+    time.sleep(7)
     selector_name = 'firstName'
     formInputName = driver2.find_element(By.ID, selector_name)
 
@@ -24,7 +24,7 @@ def editFormName():
 
 # Fonction pour valider l'étape 1
 def nextFormName ():
-    time.sleep(3)
+    time.sleep(5)
     button_next = 'VfPpkd-LgbsSe-OWXEXe-dgl2Hf'
     target_next = driver2.find_element(By.CLASS_NAME, button_next)
     try:
