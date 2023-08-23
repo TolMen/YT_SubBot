@@ -29,9 +29,9 @@ def nextFormName():
     target_next = driver2.find_element(By.CLASS_NAME, button_next)
     try:
         target_next.click()
-        print("L'étape du prénom est validé.")
+        print("-----> L'étape du prénom est validé. <-----")
     except:
-        print("L'étape du prénom a échoué !")
+        print("-----> L'étape du prénom a échoué ! <-----")
 
 
 # Fonction pour lancer l'étape 1

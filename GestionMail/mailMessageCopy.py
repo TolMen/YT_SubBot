@@ -17,7 +17,7 @@ def selectMail():
         print("Le clic sur le message a échoué !")
 
 
-# Fonction pour copier le code
+# Fonction pour copier le code de confirmation
 def copyCodeMail():
     time.sleep(5)
     try:
@@ -30,7 +30,7 @@ def copyCodeMail():
         return None
 
     time.sleep(2)
-    # Morceau de fonction pour coller le code
+    # Morceau de fonction pour coller le code de confirmation
     selector_code = 'code'
     formInputCode = driver2.find_element(By.ID, selector_code)
 
@@ -41,7 +41,7 @@ def copyCodeMail():
         print("La copie du code a échoué !")
 
 
-# Fonction pour lancer l'étape de copie/colle du code
+# Fonction pour lancer l'étape de copie/colle du code de confirmation
 def startMailMessageCopy():
     selectMail()
     copyCodeMail()

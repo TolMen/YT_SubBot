@@ -6,21 +6,17 @@ from GestionFormulaire import formStageTwo
 from GestionFormulaire import formStageThree
 from GestionFormulaire import formStageFour
 
-# Appel la fonction pour ouvrir les sites
-openMultipleDrivers()
 
-# Appel la fonction pour compléter l'étape 1 du formulaire (Prénom)
-formStageOne.startStageOne()
-
-# Appel la fonction pour compléter l'étape 2 du formulaire (Date Naissance / Genre)
-formStageTwo.startStageTwo()
-
-# Appel la fonction pour cliquer sur le bouton qui copie les e-mails
-mailNewCopy.copy_mail()
-
-# Appel la fonction pour compléter l'étape 3 du formulaire (E-mail)
-formStageThree.startStageThree()
+def startProjetBotYoutube():
+    openMultipleDrivers()   # Ouvre les deux pages Internet
+    formStageOne.startStageOne()   # Compléte l'étape UN du formulaire (Prénom)
+    formStageTwo.startStageTwo()   # Compléte l'étape DEUX du formulaire (Date de naissance & Genre)
+    mailNewCopy.copy_mail()   # Copie les E-Mails temporaire
+    formStageThree.startStageThree()  # Compléte l'étape TROIS du formulaire (E-Mail)
+    mailMessageCopy.startMailMessageCopy()  # Copie et colle le code de confirmation
+    formStageFour.startStageFour()  # Compléte l'étape QUATRE du formulaire (Code de confirmation)
 
 
-mailMessageCopy.startMailMessageCopy()
-formStageFour.startStageFour()
+# Fonction de lancement du projet
+if __name__ == "__main__":
+    startProjetBotYoutube()

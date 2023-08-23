@@ -88,9 +88,9 @@ def nextFormBirthGender():
     target_next_StageTwo = driver2.find_element(By.CLASS_NAME, button_next_StageTwo)
     try:
         target_next_StageTwo.click()
-        print("L'étape de l'anniversaire et du genre est validé.")
+        print("-----> L'étape de l'anniversaire et du genre est validé. <-----")
     except:
-        print("L'étape de l'anniversaire et du genre a échoué !")
+        print("-----> L'étape de l'anniversaire et du genre a échoué ! <-----")
 
 
 # Fonction pour lancer l'étape 2

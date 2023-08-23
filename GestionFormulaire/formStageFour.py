@@ -14,9 +14,9 @@ def nextFormCode():
     target_next_StageFour = driver2.find_element(By.CLASS_NAME, button_next_code)
     try:
         target_next_StageFour.click()
-        print("L'étape du code est validé.")
+        print("-----> L'étape du code est validé. <-----")
     except:
-        print("L'étape du code a échoué !")
+        print("-----> L'étape du code a échoué ! <-----")
 
 
 # Fonction pour lancer l'étape 4

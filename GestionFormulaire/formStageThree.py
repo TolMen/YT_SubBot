@@ -24,9 +24,9 @@ def nextFormMail():
     target_next_StageThree = driver2.find_element(By.CLASS_NAME, button_next_mail)
     try:
         target_next_StageThree.click()
-        print("L'étape de l'e-mail est validé.")
+        print("-----> L'étape de l'e-mail est validé. <-----")
     except:
-        print("L'étape de l'e-mail a échoué !")
+        print("-----> L'étape de l'e-mail a échoué ! <-----")
 
 
 # Fonction pour lancer l'étape 3
