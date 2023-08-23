@@ -58,11 +58,11 @@ def openDriverTwo(driver2):
 # Fonction pour démarrer l'ouverture des sites
 def openMultipleDrivers():
     openDriverTwo(driver2)
-    time.sleep(2)
+    time.sleep(3)
     openDriverOne(driver1)
 
 
 # Déclenche les 2 drivers
 driver1 = startChromeDriver(incognito=False)  # Navigation normal
-time.sleep(2)
+time.sleep(3)
 driver2 = startChromeDriver(incognito=True)   # Navigation privé
