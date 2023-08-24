@@ -20,7 +20,7 @@ def editFormPassword():
     except:
         print("L'écriture du mot de passe a échoué !")
 
-    time.sleep(2)
+    # Partie de la fonction de confirmer le mot de passe
     selector_passwordAgain = '[name=PasswdAgain]'
     formInputPasswordAgain = driver2.find_element(By.CSS_SELECTOR, selector_passwordAgain)
     try:
@@ -32,7 +32,7 @@ def editFormPassword():
 
 # Fonction pour valider l'étape 5
 def nextFormPassword():
-    time.sleep(2)
+    time.sleep(1)
     button_next_password = 'VfPpkd-LgbsSe-OWXEXe-dgl2Hf'
     target_next_StageFive = driver2.find_element(By.CLASS_NAME, button_next_password)
     try:

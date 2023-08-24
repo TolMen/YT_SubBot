@@ -6,7 +6,7 @@ from siteOpen import driver2
 
 # Fonction pour écrire l'e-mail dans l'étape 3 du formulaire
 def editFormMail():
-    time.sleep(2)
+    time.sleep(1)
     selector_mail = 'identifierId'
     formInputMail = driver2.find_element(By.ID, selector_mail)
 
@@ -19,7 +19,7 @@ def editFormMail():
 
 # Fonction pour valider l'étape 3
 def nextFormMail():
-    time.sleep(2)
+    time.sleep(1)
     button_next_mail = 'VfPpkd-vQzf8d'
     target_next_StageThree = driver2.find_element(By.CLASS_NAME, button_next_mail)
     try:

@@ -17,6 +17,14 @@ def startProjetBotYoutube():
     mailMessageCopy.startMailMessageCopy()  # Copie et colle le code de confirmation
     formStageFour.startStageFour()  # Compléte l'étape QUATRE du formulaire (Code de confirmation)
     formStageFive.startStageFive()   # Compléte l'étape CINQ du formulaire (Mot de passe)
+    driver1.quit()
+    time.sleep(2)
+    driver2.quit()
+    print("----------------------------------------------------------------------")
+    print("")
+    print("Fin du programme : Impossibilité de compléter la sixième étape !")
+    print("")
+    print("----------------------------------------------------------------------")
 
 
 # Fonction de lancement du projet

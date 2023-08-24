@@ -8,7 +8,7 @@ from VariousInfo import directoryDateBirth
 
 # Fonction pour écrire le jour de naissance dans l'étape 2 du formulaire
 def editBirthDay():
-    time.sleep(2)
+    time.sleep(1)
     selector_day = 'day'
     formInputDay = driver2.find_element(By.ID, selector_day)
     try:
@@ -21,7 +21,6 @@ def editBirthDay():
 
 # Fonction pour sélectionner le mois
 def editBirthMonth():
-    time.sleep(2)
     # Partie pour ouvrir la liste déroulante
     button_list_month = 'month'
     target_list_month = driver2.find_element(By.ID, button_list_month)
@@ -30,8 +29,6 @@ def editBirthMonth():
         print("La liste des mois est déroulé.")
     except:
         print("La liste des mois ne peut pas être déroulée !")
-
-    time.sleep(3)
 
     # Partie pour cliquer sur la liste déroulante
     randomNumberMonth = random.randint(1, 12)
@@ -46,7 +43,6 @@ def editBirthMonth():
 
 # Fonction pour écrire l'année de naissance dans l'étape 2 du formulaire
 def editBirthYear():
-    time.sleep(2)
     selector_year = 'year'
     formInputYear = driver2.find_element(By.ID, selector_year)
     try:
@@ -59,7 +55,6 @@ def editBirthYear():
 
 # Fonction pour sélectionner le mois
 def editGender():
-    time.sleep(2)
     # Partie pour ouvrir la liste déroulante
     button_list_gender = 'gender'
     target_list_gender = driver2.find_element(By.ID, button_list_gender)
@@ -68,8 +63,6 @@ def editGender():
         print("La liste des genres est déroulé.")
     except:
         print("La liste des genres ne peut pas être déroulée !")
-
-    time.sleep(3)
 
     # Partie pour cliquer sur la liste déroulante
     selector_value_gender = f'#gender option[value="3"]'   # Choix Non précisé
@@ -83,7 +76,7 @@ def editGender():
 
 # Fonction pour valider l'étape 2
 def nextFormBirthGender():
-    time.sleep(2)
+    time.sleep(1)
     button_next_StageTwo = 'VfPpkd-vQzf8d'
     target_next_StageTwo = driver2.find_element(By.CLASS_NAME, button_next_StageTwo)
     try:

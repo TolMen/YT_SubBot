@@ -19,7 +19,7 @@ def selectMail():
 
 # Fonction pour copier le code de confirmation
 def copyCodeMail():
-    time.sleep(5)
+    time.sleep(2)
     try:
         selector_CodeMail = 'div[style*="font-size:24px"]'
         target_CodeMail = driver1.find_element(By.CSS_SELECTOR, selector_CodeMail)
@@ -29,7 +29,6 @@ def copyCodeMail():
         print("Aucun code trouvé")
         return None
 
-    time.sleep(2)
     # Morceau de fonction pour coller le code de confirmation
     selector_code = 'code'
     formInputCode = driver2.find_element(By.ID, selector_code)
