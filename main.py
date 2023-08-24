@@ -5,6 +5,7 @@ from GestionFormulaire import formStageOne
 from GestionFormulaire import formStageTwo
 from GestionFormulaire import formStageThree
 from GestionFormulaire import formStageFour
+from GestionFormulaire import formStageFive
 
 
 def startProjetBotYoutube():
@@ -15,6 +16,7 @@ def startProjetBotYoutube():
     formStageThree.startStageThree()  # Compléte l'étape TROIS du formulaire (E-Mail)
     mailMessageCopy.startMailMessageCopy()  # Copie et colle le code de confirmation
     formStageFour.startStageFour()  # Compléte l'étape QUATRE du formulaire (Code de confirmation)
+    formStageFive.startStageFive()   # Compléte l'étape CINQ du formulaire (Mot de passe)
 
 
 # Fonction de lancement du projet
