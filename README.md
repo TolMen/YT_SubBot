@@ -41,7 +41,7 @@ This project was created for experimental purposes. <br>
 ---
 
 Thank you for taking the time to explore this project.  
-Feel free to explore, learn, and modify it! ✨  
-For any questions or collaboration, feel free to contact me! 📩  
+Feel free to explore, learn, and modify it ! ✨  
+For any questions or collaboration, feel free to contact me ! 📩  
 
 [TolMen](https://github.com/TolMen) - [LinkedIn](https://www.linkedin.com/in/jessyfrachisse/)
